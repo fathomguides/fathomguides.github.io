@@ -34,7 +34,7 @@ window.FATHOM = {
 
   /* ---------- MINECRAFT NEWS ---------- */
   mcNews: [
-    { date: "2026-10-07", title: "Ultimate Minecraft Survival Manual in production", text: "Parts I to IV are written. The full manual launches at £9.99, with Part I free to download." },
+    { date: "2026-10-08", title: "The Ultimate Minecraft Survival Manual is out", text: "All 38 chapters, from your first block to the Ender Dragon and beyond, for £9.99. Part I is free to download, so you can try it first." },
     { date: "2026-09-15", title: "Wilderness Bound is out", text: "Java 26.3 and Bedrock 26.50 added the dappled forest, poplar trees, abandoned camps, explorer maps and straw beds. All covered in the 2026 manual." }
   ],
 
