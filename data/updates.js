@@ -52,9 +52,9 @@ window.FATHOM = {
      icon: one of "game", "brick", "book", "plush", "gear",
            "fan", "battery", "stand", "card"     */
   mcMerch: [
-    { title: "Minecraft for Nintendo Switch", text: "The full game for Switch, ideal as a first copy for younger players.", icon: "game", url: "" },
-    { title: "Minecraft building sets", text: "Brick sets based on Minecraft biomes and mobs. Great for builders away from the screen.", icon: "brick", url: "" },
-    { title: "Official Minecraft books", text: "Guidebooks, stories and annuals that pair nicely with the Fathom manual.", icon: "book", url: "" },
-    { title: "Plush toys and figures", text: "Creepers, axolotls and more. An easy stocking filler.", icon: "plush", url: "" }
+    { title: "Minecraft for Nintendo Switch 2", text: "The full game for Switch 2. A great first copy for a new player, or an upgrade for a Switch fan.", icon: "game", url: "https://link.amazon/B000WXfAk" },
+    { title: "LEGO Minecraft Chicken Jockey (21582)", text: "Build the famous chicken jockey in LEGO. A fun set for builders away from the screen.", icon: "brick", url: "https://link.amazon/B00lKxzKm" },
+    { title: "Personalised Minecraft notebook", text: "A 96-page journal with their name on the cover. Perfect for planning builds and noting coordinates.", icon: "book", url: "https://link.amazon/B0341mZKn" },
+    { title: "TY Creeper plush (18cm)", text: "A soft, collectable Creeper. An easy stocking filler for any Minecraft fan.", icon: "plush", url: "https://link.amazon/B0eirBTIw" }
   ]
 };
