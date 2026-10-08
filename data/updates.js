@@ -41,10 +41,9 @@ window.FATHOM = {
   /* ---------- WHITEOUT SURVIVAL: OTHER MERCHANDISE (AMAZON) ----------
      Same rules as the Minecraft list below.                  */
   wosMerch: [
-    { title: "Phone cooling fan", text: "Clips onto your phone and keeps it cool through long events like SvS and Frostfire Mine.", icon: "fan", url: "" },
-    { title: "Power bank", text: "A fast-charging power bank so a flat battery never costs you a rally.", icon: "battery", url: "" },
-    { title: "Phone and tablet stand", text: "Hands-free viewing for gathering runs, rallies and checking the guide alongside the game.", icon: "stand", url: "" },
-    { title: "App store gift cards", text: "Google Play and App Store gift cards. A safe way to give in-game spending as a present.", icon: "card", url: "" }
+    { title: "Phone cooling fan", text: "Clips onto your phone and keeps it cool through long events like SvS and Frostfire Mine.", icon: "fan", url: "https://link.amazon/B0bWwHpnX" },
+    { title: "Power bank", text: "A fast-charging power bank so a flat battery never costs you a rally.", icon: "battery", url: "https://link.amazon/B0cPVyoPt" },
+    { title: "Phone and tablet stand", text: "Hands-free viewing for gathering runs, rallies and checking the guide alongside the game.", icon: "stand", url: "https://link.amazon/B00LaI4wa" }
   ],
 
   /* ---------- MINECRAFT: OTHER MERCHANDISE (AMAZON) ----------
