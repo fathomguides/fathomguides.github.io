@@ -270,3 +270,13 @@ nav .btn[aria-current="page"]{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--gol
 .legal p{margin:0 0 12px}
 .legal ul{margin:0 0 12px;padding-left:1.2em}
 .legal .updated{font-size:.88rem;margin-bottom:8px}
+/* ---------- Snowfox ---------- */
+.tip .fox{height:120px;width:auto;max-width:110px;object-fit:contain;align-self:center;filter:drop-shadow(0 4px 10px rgba(0,0,0,.35))}
+.page-hero .hero-tip{grid-template-columns:auto 1fr}
+.snowfox-sec{padding-block:64px}
+.snowfox{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
+.snowfox .sf-art img{width:100%;max-width:440px;border-radius:12px;border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.35);display:block;margin-inline:auto}
+.snowfox p{color:var(--muted);margin:0 0 14px}
+.sf-poses{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.sf-poses img{height:96px;width:auto;filter:drop-shadow(0 4px 8px rgba(0,0,0,.3))}
+@media (max-width:760px){.snowfox{grid-template-columns:1fr}.sf-poses img{height:72px}.tip .fox{height:96px;max-width:90px;align-self:start}.page-hero .hero-tip{gap:12px}}
