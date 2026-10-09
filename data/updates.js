@@ -19,6 +19,7 @@ window.FATHOM = {
      sample: true shows a "SAMPLE" label. Delete the sample
      codes below when you add your first real ones.          */
   wosCodes: [
+    { code: "HangulDay2026", rewards: "1K Gems, 1 x Mythic Hero Shard, 5 x 10 Chief Stamina, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "2026-10-09" },
     { code: "WOS1007", rewards: "3-day Avatar Frame, 5 x 100 Gems, 2 x 100 VIP XP and 10 x 5-minute General Speedups", expires: "", added: "2026-10-07" },
     { code: "THXTeacher", rewards: "1,000 Gems, 2 x Epic Recruitment Key, 2 x 100 VIP XP, 50 x 1K Meat, 50 x 1K Wood, 10 x 1K Coal and 5 x 1K Iron", expires: "", added: "2026-10-05" },
     { code: "GAECHEONJEOL", rewards: "1K Gems, 8 x 1-hour General Speedup, 2 x 100 Enhancement XP, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "2026-10-03" },
@@ -28,6 +29,7 @@ window.FATHOM = {
 
   /* ---------- WHITEOUT SURVIVAL NEWS ---------- */
   wosNews: [
+    { date: "2026-10-09", title: "New gift code: HangulDay2026", text: "Redeem HangulDay2026 for 1K Gems, a Mythic Hero Shard, Chief Stamina and resources. No expiry date announced yet, so claim it soon." },
     { date: "2026-10-07", title: "New gift code: WOS1007", text: "Redeem WOS1007 for a 3-day Avatar Frame, Gems, VIP XP and speedups. No expiry date announced yet, so claim it soon." },
     { date: "2026-10-07", title: "Fathom Guides launches", text: "The full Whiteout Survival series is now available: the Starter Guide plus three Guide Companions, or all four in the Complete Bundle." }
   ],
