@@ -42,6 +42,24 @@ window.FATHOM = {
     { date: "2026-09-15", title: "Wilderness Bound is out", text: "Java 26.3 and Bedrock 26.50 added the dappled forest, poplar trees, abandoned camps, explorer maps and straw beds. All covered in the 2026 manual." }
   ],
 
+  /* ---------- CLASH OF CLANS NEWS ---------- */
+  cocNews: [
+    { date: "2026-10-14", title: "The Clash of Clans Beginner's Guide is out", text: "Our first Clash of Clans guide covers gems and builders, the upgrade order, when to move up a Town Hall, attacking and clans. £3.99." }
+  ],
+
+  /* ---------- POKEMON LEGENDS: Z-A NEWS ---------- */
+  pkmnNews: [
+    { date: "2026-10-14", title: "The Pokémon Legends: Z-A Complete Manual is in production", text: "Real-time battles, all ten promotion matches, every Rogue Mega and the Mega Dimension. Follow Fathom Guides on Payhip to hear when it lands." }
+  ],
+
+  /* ---------- CLASH OF CLANS: OTHER MERCHANDISE (AMAZON) ----------
+     Leave the list empty [] and the section stays hidden.     */
+  cocMerch: [],
+
+  /* ---------- POKEMON: OTHER MERCHANDISE (AMAZON) ----------
+     Leave the list empty [] and the section stays hidden.     */
+  pkmnMerch: [],
+
   /* ---------- WHITEOUT SURVIVAL: OTHER MERCHANDISE (AMAZON) ----------
      Same rules as the Minecraft list below.                  */
   wosMerch: [
