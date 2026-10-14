@@ -19,7 +19,7 @@ window.FATHOM = {
      sample: true shows a "SAMPLE" label. Delete the sample
      codes below when you add your first real ones.          */
   wosCodes: [
-    { code: "Sportsday", rewards: "500 Gems (5 x 100), 30K Hero XP (3 x 10K), 1-hour Hero Speedup, 1-hour Construction Speedup, 1-hour Research Speedup, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "2026-10-14" },
+    { code: "SPORTSDAY26", rewards: "500 Gems (5 x 100), 30K Hero XP (3 x 10K), 1-hour Hero Speedup, 1-hour Construction Speedup, 1-hour Research Speedup, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "2026-10-14" },
     { code: "HangulDay2026", rewards: "1K Gems, 1 x Mythic Hero Shard, 5 x 10 Chief Stamina, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "2026-10-09" },
     { code: "WOS1007", rewards: "3-day Avatar Frame, 5 x 100 Gems, 2 x 100 VIP XP and 10 x 5-minute General Speedups", expires: "", added: "2026-10-07" },
     { code: "THXTeacher", rewards: "1,000 Gems, 2 x Epic Recruitment Key, 2 x 100 VIP XP, 50 x 1K Meat, 50 x 1K Wood, 10 x 1K Coal and 5 x 1K Iron", expires: "", added: "2026-10-05" },
@@ -30,7 +30,7 @@ window.FATHOM = {
 
   /* ---------- WHITEOUT SURVIVAL NEWS ---------- */
   wosNews: [
-    { date: "2026-10-14", title: "New gift code: Sportsday", text: "Redeem Sportsday for 500 Gems, 30K Hero XP, three 1-hour speedups and resources. No expiry date announced yet, so claim it soon." },
+    { date: "2026-10-14", title: "New gift code: SPORTSDAY26", text: "Redeem SPORTSDAY26 (all capitals) for 500 Gems, 30K Hero XP, three 1-hour speedups and resources. No expiry date announced yet, so claim it soon." },
     { date: "2026-10-09", title: "New gift code: HangulDay2026", text: "Redeem HangulDay2026 for 1K Gems, a Mythic Hero Shard, Chief Stamina and resources. No expiry date announced yet, so claim it soon." },
     { date: "2026-10-07", title: "New gift code: WOS1007", text: "Redeem WOS1007 for a 3-day Avatar Frame, Gems, VIP XP and speedups. No expiry date announced yet, so claim it soon." },
     { date: "2026-10-07", title: "Fathom Guides launches", text: "The full Whiteout Survival series is now available: the Starter Guide plus three Guide Companions, or all four in the Complete Bundle." }
