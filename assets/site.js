@@ -96,6 +96,7 @@
   };
   document.querySelectorAll("[data-merch]").forEach(function (box) {
     var items = D[box.getAttribute("data-merch")] || [];
+    if (!items.length) { var sec = box.closest("section"); if (sec) sec.hidden = true; return; }
     box.innerHTML = items.map(function (m) {
       var link = m.url ? '<a class="btn btn-gold" href="' + esc(m.url) + '" rel="sponsored noopener" target="_blank">View on Amazon</a>'
                        : '<span class="btn btn-line" aria-disabled="true">Link coming soon</span>';

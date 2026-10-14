@@ -280,3 +280,4 @@ nav .btn[aria-current="page"]{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--gol
 .sf-poses{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
 .sf-poses img{height:96px;width:auto;filter:drop-shadow(0 4px 8px rgba(0,0,0,.3))}
 @media (max-width:760px){.snowfox{grid-template-columns:1fr}.sf-poses img{height:72px}.tip .fox{height:96px;max-width:90px;align-self:start}.page-hero .hero-tip{gap:12px}}
+.updates.one{grid-template-columns:minmax(0,760px)}
