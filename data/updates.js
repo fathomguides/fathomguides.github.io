@@ -58,7 +58,22 @@ window.FATHOM = {
 
   /* ---------- POKEMON: OTHER MERCHANDISE (AMAZON) ----------
      Leave the list empty [] and the section stays hidden.     */
-  pkmnMerch: [],
+  pkmnMerch: [
+    { title: "Pokémon TCG: 30th Celebration Elite Trainer Box", text: "Nine booster packs, a full-art promo card and premium accessories. High demand: Amazon may sell it by invitation only.", icon: "cards", url: "https://link.amazon/B0hvkhZ3I" },
+    { title: "Pokémon TCG: 30th Celebration Binder Collection", text: "A collector's binder with five booster packs. High demand: Amazon may sell it by invitation only.", icon: "book", url: "https://link.amazon/B0fTBJf5q" },
+    { title: "Pokémon TCG: 30th Celebration Booster Bundle", text: "Six booster packs from the 30th anniversary set. A great stocking filler.", icon: "cards", url: "https://link.amazon/B0d2r3G8L" },
+    { title: "Pokémon assorted cards", text: "A mixed bundle of Pokémon cards for new collectors.", icon: "cards", url: "https://link.amazon/B082Uk5bt" },
+    { title: "Pokémon TCG: Mega Evolution Pitch Black booster pack", text: "Ten cards per pack, with four pack art variants.", icon: "cards", url: "https://link.amazon/B0eiEKAOt" },
+    { title: "Pokémon mini tin bundle", text: "50 assorted cards, one random Ultra Rare and a game coin.", icon: "cards", url: "https://link.amazon/B0d7Fq22C" },
+    { title: "Pokémon Battle Spinner Arena set", text: "Two battle spinners, two Poké Ball launchers and a battle arena. Fun away from the screen.", icon: "ball", url: "https://link.amazon/B0i8hw61j" },
+    { title: "Pokémon TCG Triple Whammy Tin (Darkrai)", text: "Three booster packs and three promo cards in a collectable tin.", icon: "cards", url: "https://link.amazon/B09w0a83u" },
+    { title: "Pokémon TCG: Paradox Rift booster pack", text: "A booster pack with Glimmet and Glimmora promo cards and a coin.", icon: "cards", url: "https://link.amazon/B0f6GTArC" },
+    { title: "Pokémon TCG: Scarlet & Violet 151 Elite Trainer Box", text: "The 151 set: booster packs, card sleeves, dice and storage. A favourite with collectors.", icon: "cards", url: "https://link.amazon/B00stMJQW" }
+  ],
+  pgoNews: [
+    { date: "2026-10-15", title: "Trail Ledger is here", text: "Our Pokémon GO companion for the Twilight Trails season and Halloween 2026 is live. Introductory price £4.99." },
+    { date: "2026-10-15", title: "Halloween 2026 dates confirmed", text: "Part I runs 27 Oct to 1 Nov (costume Zubat, Pikachu and Sinistea). Part II runs 1 to 5 Nov with the shiny Greavard debut." }
+  ],
 
   /* ---------- WHITEOUT SURVIVAL: OTHER MERCHANDISE (AMAZON) ----------
      Same rules as the Minecraft list below.                  */
