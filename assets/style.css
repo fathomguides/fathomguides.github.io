@@ -306,3 +306,25 @@ nav .btn[aria-current="page"]{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--gol
 .fan img.fan-fox{width:42%;right:-8%;bottom:-24px}
 .game.soon .shot img.shot-fox{height:96%}
 @media (max-width:760px){.tip .fox{height:140px;max-width:110px}.panel-fox{height:84px}.merch-head .panel-fox{height:96px}.sf-poses img{height:110px}.fan img.fan-fox{width:38%;right:-2%}}
+
+/* v3.8 merch carousel (more than 4 items) */
+.carousel-wrap{position:relative}
+.merch.carousel{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:calc((100% - 54px)/4);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.merch.carousel::-webkit-scrollbar{display:none}
+.merch.carousel .item{scroll-snap-align:start}
+.car-btn{position:absolute;top:38%;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--fg);font-size:1.6rem;line-height:1;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,.3);z-index:2}
+.car-btn.prev{left:-18px}.car-btn.next{right:-18px}
+.car-btn:disabled{opacity:.3;cursor:default}
+@media (max-width:980px){.merch.carousel{grid-auto-columns:calc((100% - 18px)/2)}}
+@media (max-width:480px){.merch.carousel{grid-auto-columns:82%}.car-btn.prev{left:-8px}.car-btn.next{right:-8px}}
+
+/* v3.8 store search */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.store-search{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:0 0 22px}
+.store-search input{flex:1 1 320px;background:var(--card);border:1px solid var(--line);color:var(--fg);border-radius:10px;padding:12px 14px;font-size:1rem}
+.store-search input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.store-filters{display:flex;gap:6px;flex-wrap:wrap}
+.store-filters button{background:var(--card);border:1px solid var(--line);color:var(--fg);border-radius:999px;padding:8px 14px;font-weight:700;cursor:pointer}
+.store-filters button.on{background:var(--gold);color:var(--on-gold);border-color:var(--gold)}
+.store-none{color:var(--muted);margin:0 0 18px}
+.game[hidden]{display:none!important}

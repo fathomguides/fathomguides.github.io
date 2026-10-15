@@ -84,6 +84,8 @@
 
   /* ---------- gift ideas ---------- */
   var ICONS = {
+    cards: '<svg viewBox="0 0 48 48"><rect x="8" y="10" width="22" height="30" rx="3" transform="rotate(-8 19 25)"/><rect x="18" y="8" width="22" height="30" rx="3"/><circle cx="29" cy="23" r="5"/></svg>',
+    ball: '<svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><path d="M8 24h11M29 24h11"/><circle cx="24" cy="24" r="5"/></svg>',
     game: '<svg viewBox="0 0 48 48"><rect x="4" y="14" width="40" height="22" rx="11"/><path d="M14 22v8M10 26h8"/><circle cx="32" cy="23" r="2"/><circle cx="37" cy="28" r="2"/></svg>',
     brick: '<svg viewBox="0 0 48 48"><rect x="6" y="18" width="36" height="20" rx="2"/><rect x="11" y="12" width="8" height="6" rx="1"/><rect x="29" y="12" width="8" height="6" rx="1"/></svg>',
     book: '<svg viewBox="0 0 48 48"><path d="M8 10h14a4 4 0 0 1 4 4v26a3 3 0 0 0-3-3H8z"/><path d="M40 10H26a4 4 0 0 0-4 4v26a3 3 0 0 1 3-3h15z"/></svg>',
@@ -102,5 +104,66 @@
                        : '<span class="btn btn-line" aria-disabled="true">Link coming soon</span>';
       return '<article class="item"><div class="pic">' + (ICONS[m.icon] || ICONS.gear) + '</div><div class="body"><h3>' + esc(m.title) + '</h3><p>' + esc(m.text) + '</p>' + link + '</div></article>';
     }).join("");
+    /* More than 4 items: show as a scrolling carousel the same height as other shops */
+    if (items.length > 4) {
+      box.classList.add("carousel");
+      var wrap = document.createElement("div"); wrap.className = "carousel-wrap";
+      box.parentNode.insertBefore(wrap, box); wrap.appendChild(box);
+      ["prev", "next"].forEach(function (dir) {
+        var b = document.createElement("button");
+        b.className = "car-btn " + dir; b.type = "button";
+        b.setAttribute("aria-label", dir === "prev" ? "Previous items" : "Next items");
+        b.innerHTML = dir === "prev" ? "&#8249;" : "&#8250;";
+        b.addEventListener("click", function () {
+          var card = box.querySelector(".item"); var step = card ? card.getBoundingClientRect().width + 18 : 300;
+          box.scrollBy({ left: dir === "prev" ? -step : step, behavior: "smooth" });
+        });
+        wrap.appendChild(b);
+      });
+      var upd = function () {
+        wrap.querySelector(".prev").disabled = box.scrollLeft < 8;
+        wrap.querySelector(".next").disabled = box.scrollLeft + box.clientWidth > box.scrollWidth - 8;
+      };
+      box.addEventListener("scroll", upd, { passive: true }); window.addEventListener("resize", upd); upd();
+      var paused = false;
+      wrap.addEventListener("mouseenter", function () { paused = true; });
+      wrap.addEventListener("mouseleave", function () { paused = false; });
+      wrap.addEventListener("touchstart", function () { paused = true; }, { passive: true });
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        setInterval(function () {
+          if (paused || document.hidden) return;
+          var card = box.querySelector(".item"); var step = card ? card.getBoundingClientRect().width + 18 : 300;
+          if (box.scrollLeft + box.clientWidth > box.scrollWidth - 8) box.scrollTo({ left: 0, behavior: "smooth" });
+          else box.scrollBy({ left: step, behavior: "smooth" });
+        }, 5000);
+      }
+    }
   });
+
+  /* Store search and platform filter */
+  var sq = document.getElementById("storeq");
+  if (sq) {
+    var plat = "";
+    var cards = Array.prototype.slice.call(document.querySelectorAll(".games .game"));
+    var none = document.querySelector(".store-none");
+    var norm = function (t) { return (t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); };
+    var run = function () {
+      var q = norm(sq.value.trim()), shown = 0;
+      cards.forEach(function (c) {
+        var txt = norm(c.innerText);
+        var ok = (!q || q.split(/\s+/).every(function (w) { return txt.indexOf(w) > -1; })) && (!plat || c.classList.contains("soon") || txt.indexOf(plat) > -1);
+        if (c.classList.contains("soon") && (q || plat)) ok = false;
+        c.hidden = !ok; if (ok) shown++;
+      });
+      if (none) none.hidden = shown > 0;
+    };
+    sq.addEventListener("input", run);
+    document.querySelectorAll(".store-filters button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        plat = b.getAttribute("data-p");
+        document.querySelectorAll(".store-filters button").forEach(function (x) { x.classList.toggle("on", x === b); });
+        run();
+      });
+    });
+  }
 })();
