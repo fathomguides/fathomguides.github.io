@@ -293,3 +293,16 @@ nav .btn[aria-current="page"]{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--gol
 .panel-fox{height:64px;width:auto;filter:drop-shadow(0 4px 8px rgba(0,0,0,.3))}
 .merch-head{display:flex;gap:16px;align-items:center}
 @media (max-width:760px){.hero-logo{width:104px}.panel-fox{height:52px}}
+
+/* v3.7 larger Snowfox */
+.tip .fox{height:190px;max-width:150px}
+.page-hero .hero-tip{max-width:44em;align-items:center}
+.panel-fox{height:110px}
+.panel-title{align-items:flex-end}
+.merch-head .panel-fox{height:130px}
+.sf-poses{gap:16px}
+.sf-poses img{height:160px}
+.snowfox .sf-art img{max-width:460px}
+.fan img.fan-fox{width:42%;right:-8%;bottom:-24px}
+.game.soon .shot img.shot-fox{height:96%}
+@media (max-width:760px){.tip .fox{height:140px;max-width:110px}.panel-fox{height:84px}.merch-head .panel-fox{height:96px}.sf-poses img{height:110px}.fan img.fan-fox{width:38%;right:-2%}}
