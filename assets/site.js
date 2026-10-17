@@ -183,3 +183,21 @@
   document.addEventListener("click",function(e){if(e.target.closest&&e.target.closest("[data-cookie-settings]")){e.preventDefault();show();}});
   if(!get()){if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",show);else show();}
 })();
+
+/* Home page: What's new carousel (v4.0) */
+(function(){
+  var box=document.querySelector("[data-whatsnew]"); var D=window.FATHOM||{}; var items=D.whatsNew||[];
+  if(!box) return; if(!items.length){var sec=box.closest("section"); if(sec) sec.hidden=true; return;}
+  function e(t){return String(t==null?"":t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+  function d(s){if(!s)return""; var p=s.split("-"); var m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+p[1]-1]; return +p[2]+" "+m+" "+p[0];}
+  box.innerHTML=items.map(function(i){
+    return '<a class="wn-card" href="'+e(i.url)+'"><div class="wn-pic"><img src="'+e(i.img)+'" alt="" loading="lazy"></div><div class="wn-body"><div class="wn-meta"><span class="wn-tag">'+e(i.tag)+'</span>'+(i.date?'<time datetime="'+e(i.date)+'">'+d(i.date)+'</time>':'')+'</div><h3>'+e(i.title)+'</h3><p>'+e(i.text)+'</p><span class="go">'+e(i.cta||"Read more")+' &rarr;</span></div></a>';
+  }).join("");
+  var wrap=document.createElement("div"); wrap.className="carousel-wrap"; box.parentNode.insertBefore(wrap,box); wrap.appendChild(box);
+  function step(){var c=box.querySelector(".wn-card"); return c?c.getBoundingClientRect().width+18:300;}
+  ["prev","next"].forEach(function(dir){var b=document.createElement("button"); b.className="car-btn "+dir; b.type="button"; b.setAttribute("aria-label",dir==="prev"?"Previous news":"Next news"); b.innerHTML=dir==="prev"?"&#8249;":"&#8250;"; b.addEventListener("click",function(){box.scrollBy({left:dir==="prev"?-step():step(),behavior:"smooth"});}); wrap.appendChild(b);});
+  function upd(){wrap.querySelector(".prev").disabled=box.scrollLeft<8; wrap.querySelector(".next").disabled=box.scrollLeft+box.clientWidth>box.scrollWidth-8;}
+  box.addEventListener("scroll",upd,{passive:true}); window.addEventListener("resize",upd); upd();
+  var paused=false; wrap.addEventListener("mouseenter",function(){paused=true;}); wrap.addEventListener("mouseleave",function(){paused=false;}); wrap.addEventListener("touchstart",function(){paused=true;},{passive:true}); wrap.addEventListener("focusin",function(){paused=true;});
+  if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){setInterval(function(){if(paused||document.hidden)return; if(box.scrollLeft+box.clientWidth>box.scrollWidth-8) box.scrollTo({left:0,behavior:"smooth"}); else box.scrollBy({left:step(),behavior:"smooth"});},6000);}
+})();
