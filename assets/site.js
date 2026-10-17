@@ -167,3 +167,19 @@
     });
   }
 })();
+
+/* Cookie consent for Google Analytics (v3.9) */
+(function(){
+  function get(){try{return localStorage.getItem("fg-consent")}catch(e){return null}}
+  function set(v){try{localStorage.setItem("fg-consent",v)}catch(e){}}
+  function choose(v){set(v);if(window.gtag)gtag("consent","update",{analytics_storage:v==="yes"?"granted":"denied"});var b=document.getElementById("fg-cookie");if(b)b.remove();}
+  function show(){
+    if(document.getElementById("fg-cookie"))return;
+    var b=document.createElement("div");b.id="fg-cookie";b.setAttribute("role","dialog");b.setAttribute("aria-label","Cookie choice");
+    b.innerHTML='<p>We use Google Analytics cookies to see which guides people visit, so we can make better ones. No ads, no tracking for marketing. Is that OK?</p><div class="fg-cookie-btns"><button type="button" data-v="yes">Accept</button><button type="button" data-v="no" class="ghost">Decline</button></div>';
+    b.addEventListener("click",function(e){var v=e.target.getAttribute("data-v");if(v)choose(v);});
+    document.body.appendChild(b);
+  }
+  document.addEventListener("click",function(e){if(e.target.closest&&e.target.closest("[data-cookie-settings]")){e.preventDefault();show();}});
+  if(!get()){if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",show);else show();}
+})();
