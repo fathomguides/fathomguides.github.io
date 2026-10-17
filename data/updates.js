@@ -12,6 +12,21 @@
 
 window.FATHOM = {
 
+  /* ---------- HOME PAGE: WHAT'S NEW ----------
+     Shown as a scrolling carousel on the home page, newest first.
+     date: "YYYY-MM-DD" or "" to hide the date.
+     img: a picture from the img folder, e.g. "img/pkmn-go-trail.webp".
+     url: where the card links to. cta: the button wording.          */
+  whatsNew: [
+    { date: "2026-10-15", tag: "New", title: "Pokémon GO Trail Ledger is here", text: "Our first web app: a Twilight Trails and Halloween 2026 companion, set to your clock. Introductory price £4.99.", img: "img/pkmn-go-trail.webp", url: "pokemon-go.html", cta: "Take a look" },
+    { date: "2026-10-15", tag: "Update", title: "Trail Ledger 1.1: Cinderace", text: "Is the Community Day move worth it? Real numbers against Charizard and other Fire attackers. Free for everyone who has bought it.", img: "img/snowfox-news.webp", url: "pokemon-go.html", cta: "Read more" },
+    { date: "2026-10-14", tag: "Gift code", title: "New Whiteout Survival code", text: "SPORTSDAY26 gives Gems, Hero XP, speedups and resources. Check the live list for every working code.", img: "img/wos-starter.webp", url: "whiteout-survival.html", cta: "See the codes" },
+    { date: "", tag: "Coming soon", title: "Pokémon Legends: Z-A Complete Manual", text: "Real-time battles, the Z-A Royale, Mega Evolution, every main mission and the Mega Dimension DLC.", img: "img/pkmn-za.webp", url: "pokemon-legends-za.html", cta: "Take a look" },
+    { date: "", tag: "Free", title: "Minecraft manual: free Part I", text: "Try the first part of the Ultimate Survival Manual for free before you buy the full edition.", img: "img/mc-sample.webp", url: "minecraft.html", cta: "Get Part I" },
+    { date: "", tag: "Guide", title: "Clash of Clans Beginner's Guide", text: "Builders, upgrade order, attacking and clans for new and returning players.", img: "img/coc-beginner.webp", url: "clash-of-clans.html", cta: "View guide" },
+    { date: "", tag: "Store", title: "Search the store", text: "Find guides by game or platform: mobile, console or PC.", img: "img/snowfox-shop.webp", url: "shop.html", cta: "Visit the store" }
+  ],
+
   /* ---------- WHITEOUT SURVIVAL GIFT CODES ----------
      Shown in the carousel on the Whiteout Survival page.
      expires: leave as "" if you do not know the expiry date.
