@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fathomguides.github.io/sitemap.xml
