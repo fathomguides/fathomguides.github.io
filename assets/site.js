@@ -16,6 +16,32 @@
     ul.innerHTML = items.map(function (n) {
       return '<li><time datetime="' + esc(n.date) + '">' + fmt(n.date) + '</time><h3>' + esc(n.title) + '</h3><p>' + esc(n.text) + '</p></li>';
     }).join("");
+    /* v4.1: more than 2 items, show as a carousel so long news lists stay compact */
+    if (items.length > 2) {
+      ul.classList.add("news-car");
+      var wrap = document.createElement("div"); wrap.className = "carousel-wrap news-wrap";
+      ul.parentNode.insertBefore(wrap, ul); wrap.appendChild(ul);
+      var nav = document.createElement("div"); nav.className = "news-nav"; wrap.appendChild(nav);
+      var count = document.createElement("span"); count.className = "news-count";
+      var step = function () { var c = ul.querySelector("li"); return c ? c.getBoundingClientRect().width + 12 : 300; };
+      ["prev", "next"].forEach(function (dir) {
+        var b = document.createElement("button");
+        b.className = "car-btn " + dir; b.type = "button";
+        b.setAttribute("aria-label", dir === "prev" ? "Previous news" : "Next news");
+        b.innerHTML = dir === "prev" ? "&#8249;" : "&#8250;";
+        b.addEventListener("click", function () { ul.scrollBy({ left: dir === "prev" ? -step() : step(), behavior: "smooth" }); });
+        nav.appendChild(b);
+        if (dir === "prev") nav.appendChild(count);
+      });
+      var upd = function () {
+        wrap.querySelector(".prev").disabled = ul.scrollLeft < 8;
+        wrap.querySelector(".next").disabled = ul.scrollLeft + ul.clientWidth > ul.scrollWidth - 8;
+        var per = Math.max(1, Math.round(ul.clientWidth / step()));
+        var first = Math.round(ul.scrollLeft / step()) + 1, last = Math.min(items.length, first + per - 1);
+        count.textContent = (first === last ? first : first + "\u2013" + last) + " of " + items.length + " updates";
+      };
+      ul.addEventListener("scroll", upd, { passive: true }); window.addEventListener("resize", upd); upd();
+    }
   });
 
   /* ---------- copy helper ---------- */

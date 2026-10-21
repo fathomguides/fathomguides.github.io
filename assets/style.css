@@ -160,7 +160,7 @@ a.game:hover{transform:translateY(-3px);border-color:var(--gold)}
 .game h3{font-size:1.3rem}
 .game p{color:var(--muted);margin:0;flex:1;font-size:.98rem}
 .game .foot{display:flex;justify-content:space-between;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:.85rem}
-.game .foot .go{color:var(--gold)}
+.game .foot .go{color:var(--gold);white-space:nowrap}
 .game.soon{border-style:dashed;background:transparent}
 .game.soon .shot{background:repeating-linear-gradient(135deg,var(--bg-2) 0 14px,var(--bg) 14px 28px);align-items:center}
 .game.soon .shot img{width:72px;margin:0;transform:none;box-shadow:none;opacity:.6}
@@ -368,3 +368,13 @@ nav .btn[aria-current="page"]{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--gol
 @media (max-width:760px){.feat{grid-template-columns:1fr;gap:26px}.feat-art{max-width:220px;margin:0 auto}}
 @media (max-width:480px){.wn{grid-auto-columns:82%}}
 @media (max-width:760px){.hero.home .fan{display:none}}
+
+/* v4.1 news carousel */
+.news.news-car{display:grid;grid-auto-flow:column;grid-auto-columns:100%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:2px}
+.news.news-car::-webkit-scrollbar{display:none}
+.news.news-car li{scroll-snap-align:start}
+.updates.one .news.news-car{grid-auto-columns:calc((100% - 12px)/2)}
+.news-nav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:10px}
+.news-nav .car-btn{position:static;width:36px;height:36px;font-size:1.4rem;box-shadow:none}
+.news-count{font-size:.82rem;color:var(--muted);min-width:110px;text-align:center}
+@media (max-width:640px){.updates.one .news.news-car{grid-auto-columns:100%}}
