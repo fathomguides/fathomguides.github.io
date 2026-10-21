@@ -18,10 +18,11 @@ window.FATHOM = {
      img: a picture from the img folder, e.g. "img/pkmn-go-trail.webp".
      url: where the card links to. cta: the button wording.          */
   whatsNew: [
+    { date: "2026-10-21", tag: "New", title: "Pokémon Legends: Z-A guides are out", text: "The Complete Manual, Battle Tactics Appendix and Mega Dimension Companion, all three for £10.99 in the bundle, plus a free Quick Start Checklist.", img: "img/pkmn-za-bundle.webp", url: "pokemon-legends-za.html", cta: "See the guides" },
+    { date: "2026-10-21", tag: "News", title: "Whiteout Survival October update", text: "A new gifting system, redesigned Chief Profiles, the Expedition Arena from 2 November and Mergeventure from 6 November.", img: "img/wos-starter.webp", url: "whiteout-survival.html", cta: "Read the news" },
+    { date: "2026-10-21", tag: "News", title: "Clash of Clans has a new home screen", text: "Buildings have moved to the Build menu and upgrades now sit in tabs. Here is where everything has gone.", img: "img/coc-beginner.webp", url: "clash-of-clans.html", cta: "Read the news" },
     { date: "2026-10-15", tag: "New", title: "Pokémon GO Trail Ledger is here", text: "Our first web app: a Twilight Trails and Halloween 2026 companion, set to your clock. Introductory price £4.99.", img: "img/pkmn-go-trail.webp", url: "pokemon-go.html", cta: "Take a look" },
     { date: "2026-10-15", tag: "Update", title: "Trail Ledger 1.1: Cinderace", text: "Is the Community Day move worth it? Real numbers against Charizard and other Fire attackers. Free for everyone who has bought it.", img: "img/snowfox-news.webp", url: "pokemon-go.html", cta: "Read more" },
-    { date: "2026-10-14", tag: "Gift code", title: "New Whiteout Survival code", text: "SPORTSDAY26 gives Gems, Hero XP, speedups and resources. Check the live list for every working code.", img: "img/wos-starter.webp", url: "whiteout-survival.html", cta: "See the codes" },
-    { date: "", tag: "Coming soon", title: "Pokémon Legends: Z-A Complete Manual", text: "Real-time battles, the Z-A Royale, Mega Evolution, every main mission and the Mega Dimension DLC.", img: "img/pkmn-za.webp", url: "pokemon-legends-za.html", cta: "Take a look" },
     { date: "", tag: "Free", title: "Minecraft manual: free Part I", text: "Try the first part of the Ultimate Survival Manual for free before you buy the full edition.", img: "img/mc-sample.webp", url: "minecraft.html", cta: "Get Part I" },
     { date: "", tag: "Guide", title: "Clash of Clans Beginner's Guide", text: "Builders, upgrade order, attacking and clans for new and returning players.", img: "img/coc-beginner.webp", url: "clash-of-clans.html", cta: "View guide" },
     { date: "", tag: "Store", title: "Search the store", text: "Find guides by game or platform: mobile, console or PC.", img: "img/snowfox-shop.webp", url: "shop.html", cta: "Visit the store" }
@@ -34,17 +35,14 @@ window.FATHOM = {
      sample: true shows a "SAMPLE" label. Delete the sample
      codes below when you add your first real ones.          */
   wosCodes: [
-    { code: "SPORTSDAY26", rewards: "500 Gems (5 x 100), 30K Hero XP (3 x 10K), 1-hour Hero Speedup, 1-hour Construction Speedup, 1-hour Research Speedup, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "2026-10-14" },
-    { code: "HangulDay2026", rewards: "1K Gems, 1 x Mythic Hero Shard, 5 x 10 Chief Stamina, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "2026-10-09" },
-    { code: "WOS1007", rewards: "3-day Avatar Frame, 5 x 100 Gems, 2 x 100 VIP XP and 10 x 5-minute General Speedups", expires: "", added: "2026-10-07" },
-    { code: "THXTeacher", rewards: "1,000 Gems, 2 x Epic Recruitment Key, 2 x 100 VIP XP, 50 x 1K Meat, 50 x 1K Wood, 10 x 1K Coal and 5 x 1K Iron", expires: "", added: "2026-10-05" },
-    { code: "GAECHEONJEOL", rewards: "1K Gems, 8 x 1-hour General Speedup, 2 x 100 Enhancement XP, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "2026-10-03" },
     { code: "2ndYoutubeKR", rewards: "500 Gems, 10 x Chief Stamina, 3 x 1-hour General Speedup, 2 x 100 Enhancement XP, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "" },
     { code: "1stYoutubeKR", rewards: "500 Gems, 50K Hero XP, 1-hour Troop Speedup, 1-hour Building Speedup, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "2026-06-19" }
   ],
 
   /* ---------- WHITEOUT SURVIVAL NEWS ---------- */
   wosNews: [
+    { date: "2026-10-21", title: "The October update is live", text: "The 20 October update brings a new gifting system (from Furnace 13), redesigned Chief Profiles with Likes and Popularity, calendar reminders for Foundry Battle, Canyon Clash, Bear Hunt and Crazy Joe, and the points share for each state in State vs State. Chief Orders and Bank deposits now reset after 23 hours instead of 24, and free Trek Supplies arrive twice a day." },
+    { date: "2026-10-21", title: "Dates for your diary", text: "New Expert Royal Counselor Justus arrives on 26 October, the first Expedition Arena season starts on 2 November (it alternates weekly with the Exploration Arena and costs no troops), the new Mergeventure event begins on 6 November, and the next State Transfer window runs from 8 to 14 November." },
     { date: "2026-10-14", title: "New gift code: SPORTSDAY26", text: "Redeem SPORTSDAY26 (all capitals) for 500 Gems, 30K Hero XP, three 1-hour speedups and resources. No expiry date announced yet, so claim it soon." },
     { date: "2026-10-09", title: "New gift code: HangulDay2026", text: "Redeem HangulDay2026 for 1K Gems, a Mythic Hero Shard, Chief Stamina and resources. No expiry date announced yet, so claim it soon." },
     { date: "2026-10-07", title: "New gift code: WOS1007", text: "Redeem WOS1007 for a 3-day Avatar Frame, Gems, VIP XP and speedups. No expiry date announced yet, so claim it soon." },
@@ -59,12 +57,15 @@ window.FATHOM = {
 
   /* ---------- CLASH OF CLANS NEWS ---------- */
   cocNews: [
+    { date: "2026-10-21", title: "New home screen", text: "Supercell has redesigned the home village. New buildings are now in the Build menu (bottom right), not the Shop. The Laboratory, Blacksmith and Pet House are tabs in that menu (Army Upgrades, Hero Equipment, Hero Pets), Clan Wars is reached from clan chat, and the Gold Pass has its own button. Our Beginner's Guide advice is unchanged; only where you tap has moved." },
+    { date: "2026-10-21", title: "Balance changes for Town Hall 18", text: "Supercell is weakening the Dragon Duke's Fire Heart and the Ruin Knights, and strengthening Hog Riders, Miners, the P.E.K.K.A and the Meteor Golem. Most of this affects top-level war attacks, so the Beginner's Guide advice still stands." },
     { date: "2026-10-14", title: "The Clash of Clans Beginner's Guide is out", text: "Our first Clash of Clans guide covers gems and builders, the upgrade order, when to move up a Town Hall, attacking and clans. £3.99." }
   ],
 
   /* ---------- POKEMON LEGENDS: Z-A NEWS ---------- */
   pkmnNews: [
-    { date: "2026-10-14", title: "The Pokémon Legends: Z-A Complete Manual is in production", text: "Real-time battles, all ten promotion matches, every Rogue Mega and the Mega Dimension. Follow Fathom Guides on Payhip to hear when it lands." }
+    { date: "2026-10-21", title: "Our Pokémon Legends: Z-A guides are out", text: "The Complete Manual (£9.99), Battle Tactics Appendix (£1.99) and Mega Dimension Companion (£1.99) are available now, or all three for £10.99 in the Complete Bundle. The Quick Start Checklist is free." },
+    { date: "2026-10-21", title: "Switch 2 Edition and Mega Dimension bundle on 29 October", text: "A new physical release puts the Nintendo Switch 2 Edition and the Mega Dimension DLC on one game card, with a bonus code for 100 Ultra Balls. A good moment to start if you have been waiting." }
   ],
 
   /* ---------- CLASH OF CLANS: OTHER MERCHANDISE (AMAZON) ----------
