@@ -9,6 +9,23 @@
     return isNaN(t) ? esc(d) : t.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
   }
 
+  /* v4.2: shared auto-scroll for scrolling carousels. Loops back to the start, pauses on hover, touch or focus. */
+  function autoLoop(wrap, box, step, ms) {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var paused = false;
+    wrap.addEventListener("mouseenter", function () { paused = true; });
+    wrap.addEventListener("mouseleave", function () { paused = false; });
+    wrap.addEventListener("touchstart", function () { paused = true; }, { passive: true });
+    wrap.addEventListener("touchend", function () { setTimeout(function () { paused = false; }, 8000); }, { passive: true });
+    wrap.addEventListener("focusin", function () { paused = true; });
+    wrap.addEventListener("focusout", function () { paused = false; });
+    setInterval(function () {
+      if (paused || document.hidden) return;
+      if (box.scrollLeft + box.clientWidth > box.scrollWidth - 8) box.scrollTo({ left: 0, behavior: "smooth" });
+      else box.scrollBy({ left: step(), behavior: "smooth" });
+    }, ms);
+  }
+
   /* ---------- news lists ---------- */
   document.querySelectorAll("[data-news]").forEach(function (ul) {
     var items = (D[ul.getAttribute("data-news")] || []).slice().sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
@@ -41,6 +58,7 @@
         count.textContent = (first === last ? first : first + "\u2013" + last) + " of " + items.length + " updates";
       };
       ul.addEventListener("scroll", upd, { passive: true }); window.addEventListener("resize", upd); upd();
+      autoLoop(wrap, ul, step, 7000);
     }
   });
 
@@ -151,6 +169,7 @@
         wrap.querySelector(".next").disabled = box.scrollLeft + box.clientWidth > box.scrollWidth - 8;
       };
       box.addEventListener("scroll", upd, { passive: true }); window.addEventListener("resize", upd); upd();
+      autoLoop(wrap, box, function () { var c = box.querySelector(".item"); return c ? c.getBoundingClientRect().width + 18 : 300; }, 6000);
       var paused = false;
       wrap.addEventListener("mouseenter", function () { paused = true; });
       wrap.addEventListener("mouseleave", function () { paused = false; });
