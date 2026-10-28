@@ -18,6 +18,8 @@ window.FATHOM = {
      img: a picture from the img folder, e.g. "img/pkmn-go-trail.webp".
      url: where the card links to. cta: the button wording.          */
   whatsNew: [
+    { date: "2026-10-28", tag: "News", title: "Minecraft is now on Switch 2", text: "Bedrock 26.60 is out too. New to Minecraft? Part I of our Ultimate Survival Manual is free.", img: "img/mc-sample.webp", url: "minecraft.html", cta: "Get Part I free" },
+    { date: "2026-10-28", tag: "News", title: "Pokémon Z-A: Wild Zone 1 Ranked season", text: "Ranked Battles from 29 October to 13 November only allow Pokémon caught in Wild Zone 1.", img: "img/pkmn-za-bundle.webp", url: "pokemon-legends-za.html", cta: "See the guides" },
     { date: "2026-10-21", tag: "New", title: "Pokémon Legends: Z-A guides are out", text: "The Complete Manual, Battle Tactics Appendix and Mega Dimension Companion, all three for £10.99 in the bundle, plus a free Quick Start Checklist.", img: "img/pkmn-za-bundle.webp", url: "pokemon-legends-za.html", cta: "See the guides" },
     { date: "2026-10-21", tag: "News", title: "Whiteout Survival October update", text: "A new gifting system, redesigned Chief Profiles, the Expedition Arena from 2 November and Mergeventure from 6 November.", img: "img/wos-starter.webp", url: "whiteout-survival.html", cta: "Read the news" },
     { date: "2026-10-21", tag: "News", title: "Clash of Clans has a new home screen", text: "Buildings have moved to the Build menu and upgrades now sit in tabs. Here is where everything has gone.", img: "img/coc-beginner.webp", url: "clash-of-clans.html", cta: "Read the news" },
@@ -35,12 +37,20 @@ window.FATHOM = {
      sample: true shows a "SAMPLE" label. Delete the sample
      codes below when you add your first real ones.          */
   wosCodes: [
-    { code: "2ndYoutubeKR", rewards: "500 Gems, 10 x Chief Stamina, 3 x 1-hour General Speedup, 2 x 100 Enhancement XP, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "" },
-    { code: "1stYoutubeKR", rewards: "500 Gems, 50K Hero XP, 1-hour Troop Speedup, 1-hour Building Speedup, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "2026-06-19" }
+    { code: "2ndYoutubeKR", rewards: "500 Gems, 10 x Chief Stamina, 3 x 1-hour General Speedup, 2 x 100 Enhancement XP, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "" }
+  ],
+
+  /* ---------- WHITEOUT SURVIVAL: CODES UNDER REVIEW ----------
+     Codes taken out of the live list because their status is
+     disputed. Shown in a collapsed "Codes under review" box under
+     the live codes. status: the exact wording shown on the site.   */
+  wosCodesReview: [
+    { code: "1stYoutubeKR", rewards: "500 Gems, 50K Hero XP, 1-hour Troop Speedup, 1-hour Building Speedup, 50K Meat, 50K Wood, 10K Coal and 5K Iron", status: "Community-reported expired · conflicting evidence · not officially confirmed", added: "2026-06-19", reviewed: "2026-10-28" }
   ],
 
   /* ---------- WHITEOUT SURVIVAL NEWS ---------- */
   wosNews: [
+    { date: "2026-10-28", title: "Justus arrives, new events on the way", text: "Royal Counselor Justus, a new Growth Expert, is now live in eligible states (your state must be at least 365 days old). Expedition Arena begins on 2 November and Mergeventure on 6 November; we will update the guide once we have seen how they play." },
     { date: "2026-10-21", title: "The October update is live", text: "The 20 October update brings a new gifting system (from Furnace 13), redesigned Chief Profiles with Likes and Popularity, calendar reminders for Foundry Battle, Canyon Clash, Bear Hunt and Crazy Joe, and the points share for each state in State vs State. Chief Orders and Bank deposits now reset after 23 hours instead of 24, and free Trek Supplies arrive twice a day." },
     { date: "2026-10-21", title: "Dates for your diary", text: "New Expert Royal Counselor Justus arrives on 26 October, the first Expedition Arena season starts on 2 November (it alternates weekly with the Exploration Arena and costs no troops), the new Mergeventure event begins on 6 November, and the next State Transfer window runs from 8 to 14 November." },
     { date: "2026-10-14", title: "New gift code: SPORTSDAY26", text: "Redeem SPORTSDAY26 (all capitals) for 500 Gems, 30K Hero XP, three 1-hour speedups and resources. No expiry date announced yet, so claim it soon." },
@@ -51,6 +61,7 @@ window.FATHOM = {
 
   /* ---------- MINECRAFT NEWS ---------- */
   mcNews: [
+    { date: "2026-10-28", title: "Bedrock 26.60 and Switch 2", text: "Minecraft is now on Nintendo Switch 2, and Bedrock 26.60 adds small survival tweaks, including fall damage when landing at the edge of water and feeding to heal tamed baby mobs. The winter Ice Caves drop is still in testing; we will cover it when it releases." },
     { date: "2026-10-08", title: "The Ultimate Minecraft Survival Manual is out", text: "All 38 chapters, from your first block to the Ender Dragon and beyond, for £9.99. Part I is free to download, so you can try it first." },
     { date: "2026-09-15", title: "Wilderness Bound is out", text: "Java 26.3 and Bedrock 26.50 added the dappled forest, poplar trees, abandoned camps, explorer maps and straw beds. All covered in the 2026 manual." }
   ],
@@ -64,8 +75,9 @@ window.FATHOM = {
 
   /* ---------- POKEMON LEGENDS: Z-A NEWS ---------- */
   pkmnNews: [
+    { date: "2026-10-28", title: "New Ranked Battle season: Wild Zone 1 only", text: "From 29 October to 13 November, Ranked Battles only allow Pokémon caught in Wild Zone 1, plus their evolutions and Mega Evolutions. A good excuse to revisit the early game; the Complete Manual covers Wild Zone 1 and the Battle Tactics Appendix has the fight plans." },
     { date: "2026-10-21", title: "Our Pokémon Legends: Z-A guides are out", text: "The Complete Manual (£9.99), Battle Tactics Appendix (£1.99) and Mega Dimension Companion (£1.99) are available now, or all three for £10.99 in the Complete Bundle. The Quick Start Checklist is free." },
-    { date: "2026-10-21", title: "Switch 2 Edition and Mega Dimension bundle on 29 October", text: "A new physical release puts the Nintendo Switch 2 Edition and the Mega Dimension DLC on one game card, with a bonus code for 100 Ultra Balls. A good moment to start if you have been waiting." }
+    { date: "2026-10-21", title: "Switch 2 bundle in Japan on 29 October", text: "A physical release in Japan puts the base game and the Mega Dimension DLC on one Nintendo Switch 2 game card. A release outside Japan has not been confirmed yet." }
   ],
 
   /* ---------- CLASH OF CLANS: OTHER MERCHANDISE (AMAZON) ----------
