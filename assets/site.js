@@ -126,6 +126,18 @@
     go(0); play();
   });
 
+  /* ---------- v4.3: codes under review (disputed status, not shown as live) ---------- */
+  document.querySelectorAll("[data-codes-review]").forEach(function (box) {
+    var list = D[box.getAttribute("data-codes-review")] || [];
+    if (!list.length) return;
+    box.querySelector("ul").innerHTML = list.map(function (c) {
+      return '<li><div class="cr-head"><code>' + esc(c.code) + '</code><span class="cr-status">' + esc(c.status) + '</span></div>' +
+        '<p>Listed rewards: ' + esc(c.rewards) + '</p>' +
+        '<p class="cr-dates">' + (c.added ? 'First listed ' + fmt(c.added) : '') + (c.added && c.reviewed ? ' · ' : '') + (c.reviewed ? 'Status reviewed ' + fmt(c.reviewed) : '') + '</p></li>';
+    }).join("");
+    box.hidden = false;
+  });
+
   /* ---------- gift ideas ---------- */
   var ICONS = {
     cards: '<svg viewBox="0 0 48 48"><rect x="8" y="10" width="22" height="30" rx="3" transform="rotate(-8 19 25)"/><rect x="18" y="8" width="22" height="30" rx="3"/><circle cx="29" cy="23" r="5"/></svg>',

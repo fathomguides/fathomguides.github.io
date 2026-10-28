@@ -378,3 +378,15 @@ nav .btn[aria-current="page"]{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--gol
 .news-nav .car-btn{position:static;width:36px;height:36px;font-size:1.4rem;box-shadow:none}
 .news-count{font-size:.82rem;color:var(--muted);min-width:110px;text-align:center}
 @media (max-width:640px){.updates.one .news.news-car{grid-auto-columns:100%}}
+
+/* v4.3 codes under review */
+.code-review{margin-top:16px;border:1px dashed var(--line);border-radius:10px;padding:10px 14px;background:var(--card)}
+.code-review summary{cursor:pointer;font-family:var(--font-display);font-weight:700;font-size:.92rem}
+.code-review .cr-note{margin:8px 0 6px;font-size:.85rem;color:var(--muted)}
+.code-review ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.code-review li{border-top:1px solid var(--line);padding-top:10px}
+.code-review .cr-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.code-review code{font-size:.95rem;font-weight:700;color:var(--muted)}
+.code-review .cr-status{font-size:.75rem;font-weight:700;letter-spacing:.02em;color:#b45309;background:rgba(233,150,15,.14);padding:3px 8px;border-radius:999px}
+.code-review li p{margin:4px 0 0;font-size:.85rem;color:var(--muted)}
+.code-review .cr-dates{font-size:.78rem}
