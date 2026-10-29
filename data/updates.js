@@ -18,6 +18,8 @@ window.FATHOM = {
      img: a picture from the img folder, e.g. "img/pkmn-go-trail.webp".
      url: where the card links to. cta: the button wording.          */
   whatsNew: [
+    { date: "2026-10-29", tag: "New", title: "Brawl Stars guides are here", text: "The Complete Player Guide, a Roadmap to 10,000 Trophies and two Builds books, plus a free FAQ and Resource Management Guide.", img: "img/bs-core.webp", url: "brawl-stars.html", cta: "See the guides" },
+    { date: "2026-10-29", tag: "Free", title: "Free Wild Brawl guide", text: "Our free Whiteout Survival companion for Wild Brawl: play for the missions and collect every reward.", img: "img/wos-wildbrawl.webp", url: "whiteout-survival.html", cta: "Download free" },
     { date: "2026-10-28", tag: "News", title: "Minecraft is now on Switch 2", text: "Bedrock 26.60 is out too. New to Minecraft? Part I of our Ultimate Survival Manual is free.", img: "img/mc-sample.webp", url: "minecraft.html", cta: "Get Part I free" },
     { date: "2026-10-28", tag: "News", title: "Pokémon Z-A: Wild Zone 1 Ranked season", text: "Ranked Battles from 29 October to 13 November only allow Pokémon caught in Wild Zone 1.", img: "img/pkmn-za-bundle.webp", url: "pokemon-legends-za.html", cta: "See the guides" },
     { date: "2026-10-21", tag: "New", title: "Pokémon Legends: Z-A guides are out", text: "The Complete Manual, Battle Tactics Appendix and Mega Dimension Companion, all three for £10.99 in the bundle, plus a free Quick Start Checklist.", img: "img/pkmn-za-bundle.webp", url: "pokemon-legends-za.html", cta: "See the guides" },
@@ -50,13 +52,14 @@ window.FATHOM = {
 
   /* ---------- WHITEOUT SURVIVAL NEWS ---------- */
   wosNews: [
+    { date: "2026-10-29", title: "Free guide: Wild Brawl", text: "Our new free Guide Companion covers Wild Brawl, the 10-player battlefield event: the missions, scoring, airdrops, which queue to pick and a match plan for free-to-play players." },
     { date: "2026-10-28", title: "Justus arrives, new events on the way", text: "Royal Counselor Justus, a new Growth Expert, is now live in eligible states (your state must be at least 365 days old). Expedition Arena begins on 2 November and Mergeventure on 6 November; we will update the guide once we have seen how they play." },
     { date: "2026-10-21", title: "The October update is live", text: "The 20 October update brings a new gifting system (from Furnace 13), redesigned Chief Profiles with Likes and Popularity, calendar reminders for Foundry Battle, Canyon Clash, Bear Hunt and Crazy Joe, and the points share for each state in State vs State. Chief Orders and Bank deposits now reset after 23 hours instead of 24, and free Trek Supplies arrive twice a day." },
     { date: "2026-10-21", title: "Dates for your diary", text: "New Expert Royal Counselor Justus arrives on 26 October, the first Expedition Arena season starts on 2 November (it alternates weekly with the Exploration Arena and costs no troops), the new Mergeventure event begins on 6 November, and the next State Transfer window runs from 8 to 14 November." },
     { date: "2026-10-14", title: "New gift code: SPORTSDAY26", text: "Redeem SPORTSDAY26 (all capitals) for 500 Gems, 30K Hero XP, three 1-hour speedups and resources. No expiry date announced yet, so claim it soon." },
     { date: "2026-10-09", title: "New gift code: HangulDay2026", text: "Redeem HangulDay2026 for 1K Gems, a Mythic Hero Shard, Chief Stamina and resources. No expiry date announced yet, so claim it soon." },
     { date: "2026-10-07", title: "New gift code: WOS1007", text: "Redeem WOS1007 for a 3-day Avatar Frame, Gems, VIP XP and speedups. No expiry date announced yet, so claim it soon." },
-    { date: "2026-10-07", title: "Fathom Guides launches", text: "The full Whiteout Survival series is now available: the Starter Guide plus three Guide Companions, or all four in the Complete Bundle." }
+    { date: "2026-10-07", title: "Fathom Guides launches", text: "The full Whiteout Survival series is now available: the Starter Guide plus three Guide Companions, or all four in the bundle." }
   ],
 
   /* ---------- MINECRAFT NEWS ---------- */
@@ -64,6 +67,15 @@ window.FATHOM = {
     { date: "2026-10-28", title: "Bedrock 26.60 and Switch 2", text: "Minecraft is now on Nintendo Switch 2, and Bedrock 26.60 adds small survival tweaks, including fall damage when landing at the edge of water and feeding to heal tamed baby mobs. The winter Ice Caves drop is still in testing; we will cover it when it releases." },
     { date: "2026-10-08", title: "The Ultimate Minecraft Survival Manual is out", text: "All 38 chapters, from your first block to the Ender Dragon and beyond, for £9.99. Part I is free to download, so you can try it first." },
     { date: "2026-09-15", title: "Wilderness Bound is out", text: "Java 26.3 and Bedrock 26.50 added the dappled forest, poplar trees, abandoned camps, explorer maps and straw beds. All covered in the 2026 manual." }
+  ],
+
+  /* ---------- BRAWL STARS ----------
+     bsCodes: same format as wosCodes. Only add codes from official
+     Brawl Stars or Supercell channels.                             */
+  bsCodes: [],
+  bsNews: [
+    { date: "2026-10-29", title: "Fathom Brawl Stars guides launch", text: "The Complete Player Guide (£3.99), Roadmap to 10,000 Trophies and Brawler Builds Parts 1 and 2 (£1.99 each), plus a free Beginner's FAQ and Resource Management Guide. All checked for Season 55." },
+    { date: "2026-10-29", title: "Season 55 Brawl-O-Ween", text: "The Halloween season runs through October into early November, with Vince (Mythic) joining Brawler Blast in November. Season 56 is due in early November." }
   ],
 
   /* ---------- CLASH OF CLANS NEWS ---------- */
