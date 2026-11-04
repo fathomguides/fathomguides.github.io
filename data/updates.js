@@ -18,6 +18,7 @@ window.FATHOM = {
      img: a picture from the img folder, e.g. "img/pkmn-go-trail.webp".
      url: where the card links to. cta: the button wording.          */
   whatsNew: [
+    { date: "2026-11-04", tag: "Gift code", title: "New Whiteout Survival code: WOS1104", text: "A 3-day Avatar Frame, 500 Gems, 200 VIP XP and ten 5-minute speedups. Claim it while it lasts.", img: "img/wos-starter.webp", url: "whiteout-survival.html", cta: "See the codes" },
     { date: "2026-10-29", tag: "New", title: "Brawl Stars guides are here", text: "The Complete Player Guide, a Roadmap to 10,000 Trophies and two Builds books, plus a free FAQ and Resource Management Guide.", img: "img/bs-core.webp", url: "brawl-stars.html", cta: "See the guides" },
     { date: "2026-10-29", tag: "Free", title: "Free Wild Brawl guide", text: "Our free Whiteout Survival companion for Wild Brawl: play for the missions and collect every reward.", img: "img/wos-wildbrawl.webp", url: "whiteout-survival.html", cta: "Download free" },
     { date: "2026-10-28", tag: "News", title: "Minecraft is now on Switch 2", text: "Bedrock 26.60 is out too. New to Minecraft? Part I of our Ultimate Survival Manual is free.", img: "img/mc-sample.webp", url: "minecraft.html", cta: "Get Part I free" },
@@ -39,6 +40,7 @@ window.FATHOM = {
      sample: true shows a "SAMPLE" label. Delete the sample
      codes below when you add your first real ones.          */
   wosCodes: [
+    { code: "WOS1104", rewards: "3-day Avatar Frame, 5 x 100 Gems, 2 x 100 VIP XP and 10 x 5-minute General Speedups", expires: "", added: "2026-11-04" },
     { code: "2ndYoutubeKR", rewards: "500 Gems, 10 x Chief Stamina, 3 x 1-hour General Speedup, 2 x 100 Enhancement XP, 50K Meat, 50K Wood, 10K Coal and 5K Iron", expires: "", added: "" }
   ],
 
@@ -52,6 +54,7 @@ window.FATHOM = {
 
   /* ---------- WHITEOUT SURVIVAL NEWS ---------- */
   wosNews: [
+    { date: "2026-11-04", title: "New gift code: WOS1104", text: "Redeem WOS1104 for a 3-day Avatar Frame, 500 Gems, 200 VIP XP and ten 5-minute speedups. No expiry date announced yet, so claim it soon." },
     { date: "2026-10-29", title: "Free guide: Wild Brawl", text: "Our new free Guide Companion covers Wild Brawl, the 10-player battlefield event: the missions, scoring, airdrops, which queue to pick and a match plan for free-to-play players." },
     { date: "2026-10-28", title: "Justus arrives, new events on the way", text: "Royal Counselor Justus, a new Growth Expert, is now live in eligible states (your state must be at least 365 days old). Expedition Arena begins on 2 November and Mergeventure on 6 November; we will update the guide once we have seen how they play." },
     { date: "2026-10-21", title: "The October update is live", text: "The 20 October update brings a new gifting system (from Furnace 13), redesigned Chief Profiles with Likes and Popularity, calendar reminders for Foundry Battle, Canyon Clash, Bear Hunt and Crazy Joe, and the points share for each state in State vs State. Chief Orders and Bank deposits now reset after 23 hours instead of 24, and free Trek Supplies arrive twice a day." },
