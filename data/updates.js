@@ -18,6 +18,8 @@ window.FATHOM = {
      img: a picture from the img folder, e.g. "img/pkmn-go-trail.webp".
      url: where the card links to. cta: the button wording.          */
   whatsNew: [
+    { date: "2026-11-11", tag: "New", title: "Fortnite guides are here", text: "From First Drop to Victory Royale (£3.99) and Building and Editing Fundamentals (£1.99), our first Fortnite guides.", img: "img/fn-core.webp", url: "fortnite.html", cta: "See the guides" },
+    { date: "2026-11-11", tag: "Free", title: "Free Fortnite Treasure Hunters guide", text: "How the Pirate Shop token really works, Treasure Hours, every Sprite and an end-of-season checklist.", img: "img/fn-th.webp", url: "fortnite.html", cta: "Download free" },
     { date: "2026-11-04", tag: "Gift code", title: "New Whiteout Survival code: WOS1104", text: "A 3-day Avatar Frame, 500 Gems, 200 VIP XP and ten 5-minute speedups. Claim it while it lasts.", img: "img/wos-starter.webp", url: "whiteout-survival.html", cta: "See the codes" },
     { date: "2026-10-29", tag: "New", title: "Brawl Stars guides are here", text: "The Complete Player Guide, a Roadmap to 10,000 Trophies and two Builds books, plus a free FAQ and Resource Management Guide.", img: "img/bs-core.webp", url: "brawl-stars.html", cta: "See the guides" },
     { date: "2026-10-29", tag: "Free", title: "Free Wild Brawl guide", text: "Our free Whiteout Survival companion for Wild Brawl: play for the missions and collect every reward.", img: "img/wos-wildbrawl.webp", url: "whiteout-survival.html", cta: "Download free" },
@@ -79,6 +81,14 @@ window.FATHOM = {
   bsNews: [
     { date: "2026-10-29", title: "Fathom Brawl Stars guides launch", text: "The Complete Player Guide (£3.99), Roadmap to 10,000 Trophies and Brawler Builds Parts 1 and 2 (£1.99 each), plus a free Beginner's FAQ and Resource Management Guide. All checked for Season 55." },
     { date: "2026-10-29", title: "Season 55 Brawl-O-Ween", text: "The Halloween season runs through October into early November, with Vince (Mythic) joining Brawler Blast in November. Season 56 is due in early November." }
+  ],
+
+  /* ---------- FORTNITE NEWS ---------- */
+  fnNews: [
+    { date: "2026-11-11", title: "Fathom Fortnite guides launch", text: "From First Drop to Victory Royale (£3.99), Building and Editing Fundamentals (£1.99) and a free Treasure Hunters guide to the Pirate Shop token and Sprites." },
+    { date: "2026-11-08", title: "Lil Uzi Vert Captain's Day", text: "The Lil' SMG and the Lil' Uzi Vert Jr. Sprite arrived, and Cursed Sprites returned. Miku and Teto follow on 15 November, then Oscar on 22 November." },
+    { date: "2026-11-04", title: "Treasure Hours move to Saturdays", text: "Treasure Hours now run on Saturdays, 7pm to 9pm and 2am to 4am UK time, with every player dropping with extra kit." },
+    { date: "2026-11-01", title: "Treasure Hunters season begins", text: "Crossbones Isle, 80-player lobbies, Sprites and the ultra-rare Pirate Shop Access token. The season ends with the Chapter 7 finale on 5 December." }
   ],
 
   /* ---------- CLASH OF CLANS NEWS ---------- */
